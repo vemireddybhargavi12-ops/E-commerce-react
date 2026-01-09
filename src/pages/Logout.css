@@ -1,0 +1,63 @@
+.logout-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  padding: 16px;
+}
+
+.logout-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 24px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.logout-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.logout-card h2 {
+  margin-bottom: 8px;
+}
+
+.logout-card p {
+  color: #555;
+  margin-bottom: 22px;
+}
+
+.logout-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.logout-actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #111;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .logout-card {
+    padding: 24px 16px;
+  }
+}

@@ -1,0 +1,148 @@
+.sidebar {
+  width: 220px;
+  background: #fff;
+  padding: 14px;
+  border-right: 1px solid #e5e7eb;
+
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+
+  overflow-y: auto;
+}
+
+/* TITLE */
+.sidebar-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* CATEGORIES */
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.category-list li:hover {
+  background: #f3f4f6;
+}
+
+.category-list li.active {
+  background: #111827;
+  color: #fff;
+}
+
+/* DIVIDER */
+.sidebar-divider {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* SETTINGS DROPDOWN */
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 14px;
+  margin-left: 6px;
+  transition: transform 0.2s ease;
+}
+
+
+.settings-header:hover {
+  background: #f3f4f6;
+}
+
+.settings-menu {
+  margin-top: 6px;
+  padding-left: 6px;
+}
+
+.settings-item {
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.settings-item:hover {
+  background: #f3f4f6;
+}
+
+.settings-item.logout {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+
+.logout-confirm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 1000;
+  min-width: 300px;
+}
+
+.logout-confirm p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #111827;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: space-between; /* 🔥 main fix */
+  gap: 16px;
+}
+
+.logout-actions button {
+  flex: 1; /* buttons equal width */
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Logout button */
+.logout-actions button:first-child {
+  background: #dc2626;
+  color: white;
+}
+
+/* Cancel button */
+.logout-actions button:last-child {
+  background: #e5e7eb;
+  color: #111827;
+}

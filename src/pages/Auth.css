@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login card */
+.login-box {
+  background: #1f1f1f;
+  width: 380px;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+.login-box h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 26px;
+}
+
+/* Subtitle */
+.login-box p {
+  text-align: center;
+  color: #bbbbbb;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Error text */
+.error {
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2b2b2b;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.login-box input::placeholder {
+  color: #999;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #f0a500;
+}
+
+/* Login button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #f0a500;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #ffb733;
+}
+
+/* Register text */
+.register-text {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.register-text a {
+  color: #f0a500;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+
+}
+
+.login-container {
+  height: 100vh;
+  overflow: hidden;   /* ✅ login only */
+}
