@@ -8,7 +8,7 @@ const productsData = [
     id: 1,
     name: "Fresh Tomatoes",
     category: "Vegetables",
-    price: "₹40 / kg",
+    price: "40 / kg",
     image: "https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg",
     offer: "10% OFF",
   },
