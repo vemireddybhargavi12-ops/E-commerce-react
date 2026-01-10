@@ -51,16 +51,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* 🔥 NAVBAR ONLY AFTER LOGIN */}
+      {/*  NAVBAR ONLY AFTER LOGIN */}
       {isLoggedIn && <Navbar cartCount={cartCount} />}
 
       <Routes>
-        {/* ✅ ROOT LOGIN */}
+        {/*  ROOT LOGIN */}
         <Route path="/" element={<Login onLogin={handleLogin} />} />
 
         <Route path="/register" element={<Register />} />
 
-        {/* ✅ PROTECTED HOME */}
+        {/*  PROTECTED HOME */}
         <Route
           path="/home"
           element={
