@@ -6,7 +6,7 @@ const Navbar = ({ cartCount }) => {
     <div style={styles.navbar}>
       <div style={styles.title}>Shop Now</div>
 
-      {/* 👇 Cart icon with Link */}
+      
       <Link to="/home/cart" style={styles.cart}>
         <span style={styles.cartIcon}>🛒</span>
 
