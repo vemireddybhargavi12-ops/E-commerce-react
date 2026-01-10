@@ -14,8 +14,8 @@ function Login({ onLogin }) {
 
     // demo credentials
     if (email === "admin@shop.com" && password === "2850") {
-      localStorage.setItem("isLoggedIn", "true"); // 🔥 persist login
-      onLogin();                                 // 🔥 update App state
+      localStorage.setItem("isLoggedIn", "true"); //  persist login
+      onLogin();                                 // update App state
       navigate("/home");                         // redirect
     } else {
       setError("Invalid email or password");
