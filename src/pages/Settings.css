@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
 
-  /* 🔥 IMPORTANT FIX */
+  /*  IMPORTANT FIX */
   padding-top: 120px;   /* navbar height + gap */
   padding-bottom: 40px;
 
