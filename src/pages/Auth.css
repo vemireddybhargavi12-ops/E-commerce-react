@@ -111,5 +111,5 @@ html, body {
 
 .login-container {
   height: 100vh;
-  overflow: hidden;   /* ✅ login only */
+  overflow: hidden;   
 }
