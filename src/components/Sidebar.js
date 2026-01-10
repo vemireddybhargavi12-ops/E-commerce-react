@@ -66,7 +66,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
       </div>
     </aside>
 
-    {/* ✅ POPUP MUST BE OUTSIDE SIDEBAR */}
+    
     {showLogoutConfirm && (
       <div className="logout-confirm">
         <p>Are you sure you want to logout?</p>
