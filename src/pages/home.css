@@ -64,9 +64,9 @@ body {
   width: 100%;
 }
 
-/* =========================
-   PRODUCT CARD
-========================= */
+ 
+  /*  PRODUCT CARD */
+
 .card {
   background: #ffffff;
   border-radius: 10px;
@@ -114,20 +114,20 @@ body {
   border-radius: 4px;
 }
 
-/* =========================
-   DESKTOP (≥1200px)
-   👉 auto-fit → 6+ items
-========================= */
+ 
+ /*  DESKTOP (≥1200px) */
+
+
 @media (min-width: 1200px) {
   .products {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
 
-/* =========================
-   TABLET (768px – 1024px)
-   👉 EXACTLY 3 ITEMS
-========================= */
+
+/* TABLET (768px – 1024px) */
+
+
 @media (max-width: 1024px) {
   .sidebar {
     width: 150px;
@@ -138,28 +138,27 @@ body {
   }
 }
 
-/* =========================
-   MOBILE (≤768px)
-   👉 2 ITEMS, NO OVERFLOW
-========================= */
+
+ /* MOBILE (≤768px) */
+ 
 @media (max-width: 768px) {
   .home-layout {
     flex-direction: row; /* sidebar always LEFT */
   }
 
   .sidebar {
-    width: 85px; /* ✅ more slim */
+    width: 85px; /*  more slim */
     font-size: 12px;
   }
 
   .products {
-    grid-template-columns: repeat(2, 1fr); /* ✅ FIXED */
+    grid-template-columns: repeat(2, 1fr); /*  FIXED */
     gap: 8px;
     padding: 8px;
   }
 
   .card img {
-    height: 80px; /* ✅ overlap fix */
+    height: 80px; /*  overlap fix */
   }
 
   .card h4 {
